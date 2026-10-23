@@ -6,7 +6,7 @@
 
 A disclosure guard for voice agents that call businesses for a user, written as code rather than as a prompt. It keeps one-time passwords, PINs, CVVs, card numbers, passwords and Aadhaar numbers from being spoken, even when the LLM tries to say them. It also treats everything the other party says as untrusted input.
 
-The npm package name is `@standin/disclosure-guard`. It was extracted from [Stand-In](https://github.com/MahalParida/stand-in), an Alexa+ add-on that makes customer-care calls for a user, where every outbound utterance passes through this package before text-to-speech. It has one runtime dependency (`zod`), no network or file I/O, and is MIT licensed.
+The npm package name is `disclosure-guard`. It was extracted from [Stand-In](https://github.com/MahalParida/stand-in), an Alexa+ add-on that makes customer-care calls for a user, where every outbound utterance passes through this package before text-to-speech. It has one runtime dependency (`zod`), no network or file I/O, and is MIT licensed.
 
 ## Install
 
@@ -18,7 +18,7 @@ The npm package name is `@standin/disclosure-guard`. It was extracted from [Stan
 npm install git+https://github.com/MahalParida/disclosure-guard.git
 
 # after an npm release
-npm install @standin/disclosure-guard
+npm install disclosure-guard
 ```
 
 Requires Node.js 22 or later. The package is ESM-only and ships its own TypeScript types.
@@ -168,7 +168,7 @@ Detection runs on a normalised copy of the text. Fullwidth, math-alphanumeric, s
 ## Example
 
 ```ts
-import { guardUtterance, classifyInbound, mask } from '@standin/disclosure-guard';
+import { guardUtterance, classifyInbound, mask } from 'disclosure-guard';
 
 const facts = [
   { key: 'name', label: 'Name', value: 'Asha Rao', tier: 'share', approved: false },

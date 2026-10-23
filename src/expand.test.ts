@@ -4,7 +4,7 @@ import { FACTS } from './testing/fixtures.js';
 
 describe('package', () => {
   it('exports its package name', () => {
-    expect(PACKAGE_NAME).toBe('@standin/disclosure-guard');
+    expect(PACKAGE_NAME).toBe('disclosure-guard');
   });
 });
 

@@ -34,4 +34,4 @@ jobs:
           mkdir -p "$RUNNER_TEMP/consumer" && cd "$RUNNER_TEMP/consumer"
           npm init -y >/dev/null
           npm install "$RUNNER_TEMP"/standin-disclosure-guard-*.tgz
-          node --input-type=module -e "import { guardUtterance } from '@standin/disclosure-guard'; const r = guardUtterance('It is four eight two nine one one.', [{ key: 'otp', label: 'OTP', value: '482911', tier: 'never', approved: false }]); if (r.allowed) { console.error('guard did not block'); process.exit(1); } console.log('blocked as expected');"
+          node --input-type=module -e "import { guardUtterance } from 'disclosure-guard'; const r = guardUtterance('It is four eight two nine one one.', [{ key: 'otp', label: 'OTP', value: '482911', tier: 'never', approved: false }]); if (r.allowed) { console.error('guard did not block'); process.exit(1); } console.log('blocked as expected');"

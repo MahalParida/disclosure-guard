@@ -1,5 +1,5 @@
 {
-  "name": "@standin/disclosure-guard",
+  "name": "disclosure-guard",
   "version": "0.1.0",
   "description": "Code-level disclosure guard for voice agents: template expansion with tiered facts, output DLP (OTP/PIN/card/Aadhaar/CVV/passwords, spoken-digit aware), inbound social-engineering and prompt-injection classifier, transcript masking.",
   "keywords": [

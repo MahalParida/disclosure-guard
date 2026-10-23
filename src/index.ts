@@ -1,8 +1,8 @@
 /**
- * @standin/disclosure-guard — code-level disclosure guard for voice agents.
+ * disclosure-guard — code-level disclosure guard for voice agents.
  * MIT licensed. No runtime dependency other than zod.
  */
-export const PACKAGE_NAME = '@standin/disclosure-guard' as const;
+export const PACKAGE_NAME = 'disclosure-guard' as const;
 
 export { expand, isSpeakable, MALFORMED_KEY } from './expand.js';
 export { scanOutbound, mask } from './dlp.js';
